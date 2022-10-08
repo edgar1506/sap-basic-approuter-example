@@ -1,0 +1,20 @@
+ID: my-basic-approuter
+_schema-version: "3.3"
+version: 1.0.0
+
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+
+modules:
+  - name: my-basic-approuter-app1
+    type: nodejs
+    path: ./
+    build-parameters:
+      ignore: ["node_modules/", "package-lock.json"]
+    provides:
+      - name: app1-url
+        properties:
+          url: ${default-url}
