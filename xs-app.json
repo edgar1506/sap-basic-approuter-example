@@ -6,6 +6,12 @@
             "target": "search?q=$1",
             "destination": "google_dest",
             "cacheControl": "no-cache"
+        },
+        {
+            "source": "^(.*)$",
+            "localDir": "./src",
+            "target": "not-found.html",
+            "cacheControl": "no-cache"
         }
     ]
 }
