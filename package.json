@@ -1,20 +1,23 @@
 {
-  "name": "sap-basic-approuter-example",
-  "version": "1.0.0",
-  "description": "Basic SAP Approuter example",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edgar1506/sap-basic-approuter-example.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/edgar1506/sap-basic-approuter-example/issues"
-  },
-  "homepage": "https://github.com/edgar1506/sap-basic-approuter-example#readme"
+    "name": "sap-basic-approuter-example",
+    "version": "1.0.0",
+    "description": "Basic SAP Approuter example",
+    "scripts": {
+        "start": "env-cmd node node_modules/@sap/approuter/approuter.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/edgar1506/sap-basic-approuter-example.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/edgar1506/sap-basic-approuter-example/issues"
+    },
+    "homepage": "https://github.com/edgar1506/sap-basic-approuter-example#readme",
+    "dependencies": {
+        "@sap/approuter": "^11.5.0",
+        "env-cmd": "^10.1.0"
+    }
 }

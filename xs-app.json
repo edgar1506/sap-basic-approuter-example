@@ -1,0 +1,11 @@
+{
+    "authenticationMethod": "none",
+    "routes": [
+        {
+            "source": "^/google-search/(.*)$",
+            "target": "search?q=$1",
+            "destination": "google_dest",
+            "cacheControl": "no-cache"
+        }
+    ]
+}
